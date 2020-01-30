@@ -1,6 +1,7 @@
 name: 'Test file system'
 description: 'Test the existence of set of files in the filesystem'
 author: 'BorjaOuterelo'
+icon:
 inputs:
   path:              # change this
     description: 'Working dir to use'
@@ -10,3 +11,6 @@ inputs:
 runs:
   using: 'node12'
   main: 'lib/testfs.js'
+branding:
+  icon: 'check'  
+  color: 'green'
