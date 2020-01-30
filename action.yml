@@ -1,0 +1,12 @@
+name: 'Test file system'
+description: 'Test the existence of set of files in the filesystem'
+author: 'BorjaOuterelo'
+inputs:
+  path:              # change this
+    description: 'Working dir to use'
+    default: './'
+  files:
+    description: 'Set of files to check existence of. It should provide a comma separated string containing paths relative to path'
+runs:
+  using: 'node12'
+  main: 'lib/testfs.js'

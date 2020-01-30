@@ -20,6 +20,6 @@ jobs:
       - name: Check_files 
         uses: BorjaOuterelo/test-file-system-action@v0.0.1
         with:
-
-
+            path: '<your path'
+            files: 'file.txt,../secondfile.a'
 ```
