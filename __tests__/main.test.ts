@@ -27,6 +27,15 @@ test("Mix files", async () => {
   expect(check_fs(mix_files, __dirname)).toBe(false);
 });
 
+const real_files_to_trim: Array<string> = [
+  " main.test.ts",
+  path.join("..", "lib", "testfs.js ")
+];
+
+test("Trim", async () => {
+  expect(check_fs(real_files_to_trim, __dirname)).toBe(true);
+});
+
 // shows how the runner will run a javascript action with env / stdout protocol
 test("Run action bad input", () => {
   process.env["INPUT_FILES"] = no_files.toString();

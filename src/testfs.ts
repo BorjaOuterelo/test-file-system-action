@@ -9,7 +9,7 @@ export function check_fs(
   let result: boolean = true;
   let full_path: string = "";
   for (let test_file of files) {
-    full_path = path.join(base_path, test_file);
+    full_path = path.join(base_path, test_file.trim());
     console.log("Testing ....: ", full_path);
     console.log(
       (result =
