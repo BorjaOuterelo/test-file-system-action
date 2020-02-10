@@ -1,6 +1,6 @@
 {
   "name": "TestFS",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "private": true,
   "description": "Test files existence",
   "main": "lib/testfs.js",
